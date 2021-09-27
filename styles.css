@@ -1,0 +1,315 @@
+.container-fluid {
+	position: absolute;
+	margin: 0px;
+	margin-left: 35%;
+	margin-top: 12%;
+	width:250px;
+	height: 250px;
+	background-color: white; 
+	transition: width 2s;
+}
+
+.sect1 {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	background-color: #0F52BA;
+	border-top-left-radius: 100%;
+	animation: Blink_sect1 5s 1;
+
+	
+}
+
+.sect2 {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	left: 50%;
+	bottom: 50%;		
+	background-color: #F08FC0; 
+	border-top-right-radius: 50%;
+	animation: Blink_sect2 5s 1;
+	/*animation-delay: 5s;*/
+
+	/*animation-delay: 3s;
+	animation: Blink3 12s 1;*/
+
+}
+.sect3 {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	bottom: 50%;
+	background-color: #FF2626;
+	border-bottom-left-radius: 50%;
+	animation: Blink_sect3 10s 1;
+	/*animation-delay: 9s;
+	animation-timing-function: linear;
+	animation: Blink3 12s 1;*/
+
+}
+
+.sect4 {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	left: 50%;
+	bottom: 100%;
+	background-color: #64C9CF;
+	border-bottom-right-radius: 50%;
+	animation: Blink_sect4 10s 1;
+/*	animation-timing-function: linear;
+	animation-delay: 6s;
+	animation: Blink3 12s 1;
+*/
+}
+
+.sect5 {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	left: 25%;
+	bottom: 175%;
+	background-color: white;
+	border-radius: 50%;
+	animation: Enlarge 20s 1;
+		
+	
+}
+
+.middle_box {
+	position: relative;
+	margin: auto;
+	height: 36%;  
+	width: 64%;    /*these two ratio give the eye pleasing 16:9 ratio, wehave centered the box */
+	top: 32%;
+	transform: scale(1.25);
+	background-color: white;
+
+} /*I am currently taking 45:10:45* ratio for letters of name*/
+.namecase1 {
+	position: absolute;
+	height: 100%;
+	width: 45%;
+	background-color: white;
+}
+	
+		.name_prt1_1 {
+			position: relative;
+			width: 15%;
+			height: 50%;
+			background-color: #0F52BA;
+		}
+
+		.name_prt1_2 {
+			position: relative;
+			width: 15%;
+			height: 50%;
+			background-color: #FF2626; 
+		}
+
+		.name_prt1_3 {
+			position: relative;
+			width: 100%;
+			height: 12%;
+			top: -82%;
+			transform: rotate(-30deg);
+			background-color: #0F52BA;
+		}
+
+		.name_prt1_4 {
+			position: relative;
+			width: 100%;
+			height: 12%;
+			top: -42%;
+			transform: rotate(30deg);
+			background-color: #FF2626;
+		}
+
+.namecase2 {
+	position: absolute;
+	height: 100%;
+	width: 45%;
+	left: 55%;
+	background-color: white;
+}
+
+		.name_prt2_1 {
+			position: relative;
+			width: 100%;
+			height: 12%;
+			background-color: #F08FC0; 
+		}
+
+		.name_prt2_2 {
+			position: relative;
+			width: 15%;
+			height: 50%;
+			top: -12%;
+			background-color: #F08FC0;
+		}
+
+		.name_prt2_3 {
+			position: relative;
+			width: 100%;
+			height: 12%;
+			top: -20%;
+			background-color: #64C9CF;
+		}
+			.name_prt2_3_1{
+				position: relative;
+				width: 50%;
+				height: 100%;
+				background-color:#F08FC0; 
+			}
+
+		.name_prt2_4 {
+			position: relative;
+			width: 15%;
+			height: 50%;
+			left: 85%;
+			top: -24%;
+			background-color: #64C9CF;
+
+		}	
+
+		.name_prt2_5 {
+			position: relative;
+			width: 100%;
+			height: 12%;
+			top: -36%;
+			background-color: #64C9CF;
+		}
+
+.sect1:hover {
+	transform: translate(-25px,-50px);
+}
+
+@keyframes  Blink_sect1{
+	/*0% {
+		background-color:#F08FC0; 
+	}*/
+	10% {
+		background-color: white;
+	}
+	20% {
+		background-color:#0F52BA; 
+	}
+
+	30% {
+		background-color: white;
+	}
+
+	40% {
+		background-color: #0F52BA;
+	}
+	50% {
+		background-color: white;
+	}
+	55% {
+		background-color:#0F52BA;
+		opacity: 1; 
+	}
+
+}
+
+@keyframes Blink_sect2 {
+	55% {
+		background-color: #F08FC0;
+	}
+	60% {
+		background-color:white; 
+	}
+
+	70% {
+		background-color: #F08FC0;
+	}
+
+	80% {
+		background-color: white;
+	}
+	90% {
+		background-color: #F08FC0;
+	}	
+	100% {
+		background-color: white;
+	}
+}
+
+@keyframes Blink_sect4 {
+	50% {
+		background-color: #64C9CF;
+	}
+	55% {
+		background-color: white;
+	}
+	60% {
+		background-color: #64C9CF;
+	}
+	65% {
+		background-color: white;
+	}
+	70% {
+		background-color: #64C9CF;
+	}
+	75% {
+		background-color: white;
+	}
+	76% {
+		background-color: #64C9CF;
+	}
+}
+
+@keyframes Blink_sect3 {
+	75% {
+		background-color:#FF2626; 
+	}
+	80% {
+		background-color: white;
+	}
+	85% {
+		background-color: #FF2626;
+	}
+	90% {
+		background-color: white;
+	}
+	95% {
+		background-color: #FF2626
+	}
+	100% {
+		background-color: white;
+	}
+}
+
+@keyframes Enlarge{
+	53% {
+		transform: scale(1,1);
+	}
+	56% {
+		transform: scale(0,0);
+	}
+	65% {
+		transform: scale(2.5,2.5);
+	}
+	70% {
+		transform: scale(2.5,2.5);
+	}
+	78% {
+		transform: scale(1,1);
+	}
+}
+
+/*
+.container-fluid:hover {
+	transform: scale(2);
+}
+*/
+/*.sect5:hover {
+	background-color:#64C9CF; 
+}*/
+
+/*@keyframes blinkTxt {
+	0% {background-color: white;}
+	100% {background-color:#64C9CF; }
+}*/
+
